@@ -13,7 +13,7 @@ class Board
   end
   def verify_win # si win true
     (@hash["A1"]==@hash["A2"] && @hash["A1"]==@hash["A3"] && @hash["A1"]!=" ") ||
-    (@hash["B1"]==@hash["B2"] && @hash["B1"]==@hash["B3"] && @hash["A1"]!=" ") ||
+    (@hash["B1"]==@hash["B2"] && @hash["B1"]==@hash["B3"] && @hash["B1"]!=" ") ||
     (@hash["C1"]==@hash["C2"] && @hash["C1"]==@hash["C3"] && @hash["C1"]!=" ") ||
     (@hash["A1"]==@hash["B1"] && @hash["A1"]==@hash["C1"] && @hash["A1"]!=" ") ||
     (@hash["A2"]==@hash["B2"] && @hash["A2"]==@hash["C2"] && @hash["A2"]!=" ") ||

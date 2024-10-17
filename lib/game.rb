@@ -22,11 +22,12 @@ class Game
       end
       @board.changer_case(input, player.symbole)
       if @board.verify_win
-        puts "le joueur #{player.name} à gagné"
+        puts "le joueur #{player.name} à gagné\n"
         player.win +=1
         break
       end
     end
+    puts "c'est une egalité\n" if @round=9
   end
 end
 
