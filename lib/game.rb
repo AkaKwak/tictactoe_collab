@@ -7,6 +7,7 @@ class Game
     game
   end
   def game
+    puts "sdfhhjkfg"
     while @round<9
       @round+=1
       puts "#{@player1.name} vs #{@player2.name}   #{@player1.win} / #{@player2.win}"
@@ -27,7 +28,8 @@ class Game
         break
       end
     end
-    puts "c'est une egalité\n" if @round=9
+    puts "c'est une egalité\n" if @round==9
+    @board.show
   end
 end
 
