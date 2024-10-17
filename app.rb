@@ -1,4 +1,6 @@
+# app.rb
 require 'bundler'
+require 'colorize'
 Bundler.require
 
 $:.unshift File.expand_path("./../lib", __FILE__)
@@ -8,4 +10,5 @@ require 'game'
 require 'player'
 require 'show'
 
-# Game.  new or run  dlsfkjgdlskfjgdlkrfghjldkgjfh?
+game = Game.new
+game.start
