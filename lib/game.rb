@@ -18,8 +18,6 @@ class Game
       autorise=["A1","A2","A3","B1","B2","B3","C1","C2","C3"]
       while !autorise.include?(input) || !@board.verify_case(input, player.symbole)
         puts "entrée non valide, réssaille :)"
-        puts !autorise.include?(input)
-        puts @board.verify_case(input, player.symbole)
         input=gets.chomp.upcase
       end
       @board.changer_case(input, player.symbole)
