@@ -5,7 +5,6 @@ class Game
     @player1=player1
     @player2=player2
   end
-
   def round
     while @round<9
       round+=1
@@ -18,6 +17,7 @@ class Game
       autorise=["A1","A2","A3","B1","B2","B3","C1","C2","C3"]
       while !autorise.include?(input) || @board.verify_case(input, player.symbole)
         puts "entrée non valide, réssaille :)"
+        input=gets.chomp.upcase
       end
       board.changer_case(input, player.symbole)
       if board.verify_win
