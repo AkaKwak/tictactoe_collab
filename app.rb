@@ -7,5 +7,6 @@ require 'boardCase'
 require 'game'
 require 'player'
 require 'show'
+require 'application'
 
-# Game.  new or run  ?
+Application.new.perform
