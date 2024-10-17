@@ -14,6 +14,17 @@ class Board
       }
     end
 
+    def show  # Affiche l'état actuel du plateau dans le terminal.
+        # Cette fonction affiche le plateau en format 3x3, avec les lignes (A, B, C)
+        # et les colonnes (1, 2, 3), en montrant les valeurs de chaque case.
+        puts "   1   2   3 "
+        puts "A  #{@cases['A1']} | #{@cases['A2']} | #{@cases['A3']}"
+        puts "  ---|---|---"
+        puts "B  #{@cases['B1']} | #{@cases['B2']} | #{@cases['B3']}"
+        puts "  ---|---|---"
+        puts "C  #{@cases['C1']} | #{@cases['C2']} | #{@cases['C3']}"
+      end````
+
     # Utilise la classe Show pour afficher le plateau
 def view_board
     Show.new.display(@cases.values)  # Contient la méthode display qui est explicitement appelée pour afficher le plateau.
