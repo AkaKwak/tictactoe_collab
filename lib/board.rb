@@ -2,8 +2,6 @@ class Board
     #Classe Board : Gère la logique du plateau (représente le plateau de jeu et gère les interactions avec les cases.)
     #et délègue l'affichage à la classe Show.
     
-    
-    
     def initialize  # Crée les 9 cases du plateau, représentées par un hash.
       # Le hash @cases utilise des paires clé-valeur où la clé est la position de la case (ex: "A1") 
       # et la valeur est le contenu de la case (" " pour vide, "X" ou "O").
@@ -13,17 +11,6 @@ class Board
         "C1" => " ", "C2" => " ", "C3" => " "
       }
     end
-
-    def show  # Affiche l'état actuel du plateau dans le terminal.
-        # Cette fonction affiche le plateau en format 3x3, avec les lignes (A, B, C)
-        # et les colonnes (1, 2, 3), en montrant les valeurs de chaque case.
-        puts "   1   2   3 "
-        puts "A  #{@cases['A1']} | #{@cases['A2']} | #{@cases['A3']}"
-        puts "  ---|---|---"
-        puts "B  #{@cases['B1']} | #{@cases['B2']} | #{@cases['B3']}"
-        puts "  ---|---|---"
-        puts "C  #{@cases['C1']} | #{@cases['C2']} | #{@cases['C3']}"
-      end````
 
     # Utilise la classe Show pour afficher le plateau
 def view_board
