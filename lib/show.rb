@@ -1,19 +1,21 @@
-class Show
+# class Show
 
-  def view_boar( , , , , , , , , )  
-    #A1 etc = une instance de BoardCase ?
-    puts "__________________"
-    print ""
-    print ""
+# def view_board( , , , , , , , , )
+# A1 etc = une instance de BoardCase ?
+puts '_' * 13
+print '|_#_|'
+print '_#_|'
+puts '_#_|'
 
-    puts ""
-    print ""
-    print""
+print '|_#_|'
+print '_#_|'
+puts '_#_|'
 
-    puts ""
-    print ""
-    print ""
+print '|_#_|'
+print '_#_|'
+puts '_#_|'
+puts '_' * 13
 
-  end
-  
-end
+# end
+
+# end
