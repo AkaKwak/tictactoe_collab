@@ -1,7 +1,7 @@
 require 'bundler'
 Bundler.require
 
-$:.unshift File.expandpath("./../lib", _FILE)
+$:.unshift File.expand_path("./../lib", __FILE__)
 require 'board'
 require 'boardCase'
 require 'game'
